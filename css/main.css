@@ -278,7 +278,11 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .about{
+<<<<<<< HEAD
     opacity: 0;
+=======
+    display: none!important;
+>>>>>>> ff46c648fd296826f755301f284b6412c7e9f36a
     }}
 
 @media screen and (max-width: 500px) {
