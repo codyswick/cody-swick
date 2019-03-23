@@ -65,7 +65,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #FF8C00; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #FF8C00; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -132,16 +132,18 @@ h3 {
     background: rgba(73, 73, 73, 0.5); }
 
 a {
-  color: #fff;
+  color: #333;
   text-decoration: none; }
-
+.about a {
+    color: #FF8C00;
+    text-decoration: none; }
 header {
   position: fixed;
   z-index: 2;
   width: 100%; }
 
 .text-secondary {
-  color: orange; }
+  color: #FF8C00; }
 
 main {
   padding: 4rem;
@@ -151,7 +153,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #FF8C00;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -180,7 +182,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #FF8C00 5px solid; }
 
 .projects {
   display: grid;
@@ -189,11 +191,16 @@ main {
   .projects img {
     width: 100%;
 	  height:;
-    border: 3px #fff solid; }
+     }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
-      transition: all 0.5s ease-out; }
+      transition: all 0.5s ease-out;
+    }
+
+.image-caption{
+  color: orange;
+  text-align: center;
+}
 
 .boxes {
   display: flex;
@@ -209,7 +216,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #FF8C00;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -220,7 +227,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #FF8C00;
     color: #000; }
 
 .btn-dark {
