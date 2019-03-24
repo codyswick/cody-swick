@@ -58,22 +58,41 @@
       This is how you can reach me...
     </h2>
     <div class="boxes">
-      <div>
-        <span class="text-secondary">Email: </span> johndoe@test.com
+      <div class="form" id='bg-img'>
+
+        <div class="mail"></div>
+        <h1>Mail form</h1>
+        <form action="https://formspree.io/codyswick1988@gmail.com" method="POST">
+          <input type="text" name='Name' placeholder="Your name" />
+
+          <input type="text" name='email'placeholder="E-mail" />
+
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+
+          <button class="submit">Send</button>
+
+        </form>
       </div>
-      <div>
-        <span class="text-secondary">Phone: </span> (555) 555-5555
-      </div>
-      <div>
-        <span class="text-secondary">Address: </span> 50 Main st Boston MA 02101
-      </div>
+
+      <div class="ok_message">
+        <span>We'll answer you soon!</span></div>
+
+
+
     </div>
   </main>
+
+
+
+
+
+
+
 
   <footer id="main-footer">
     Copyright &copy; 2018
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 
