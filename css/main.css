@@ -137,6 +137,9 @@ a {
 .about a {
     color: #FF8C00;
     text-decoration: none; }
+.link-orange{
+  color: transparent;
+}
 header {
   position: fixed;
   z-index: 2;
@@ -396,8 +399,13 @@ main {
       font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; }
+    .link-orange{
+      color: #FF8C00;
+      margin-left: 10px;
+    }
 
    }
+
 
 /* contact   */
 
