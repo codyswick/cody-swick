@@ -37,7 +37,7 @@ function toggleMenu() {
 
 
 // contact form
-$(".form").on('click', function() {
+$("#mc_embed_signup").on('click', function() {
   $(this).addClass('active');
 });
 
@@ -53,7 +53,7 @@ $(".submit").on('click', function() {
 
 $(".ok_message").on('click', function() {
   $(this).removeClass("active");
-  $(".form").removeClass("active").show();
+  $("#mc_embed_signup").removeClass("active").show();
 });
 
 

@@ -446,7 +446,7 @@ main {
       color: #FF8C00;
       margin-left: 10px;
     }
-    
+
 
 
    }
@@ -465,26 +465,25 @@ main {
   font-family: 'Lato', sans-serif;
   outline: none;
 }
-.contact, .boxes{
-  text-align: center;
+#mc_embed_signup h2{
+  text-align: center!important;
   justify-content: center;
 }
 /* Form opened styles */
-.form.active {
+#mc_embed_signup.active {
   padding: 16px;
-  text-align: center;
-
+  text-align: center!important;
   border: 1px solid #fff;
   box-shadow: 0px 30px 20px -20px rgba(0,0,0,0.3);
   overflow: hidden;
-  width: 900px;
-  height: 500px;
-  -webkit-animation: openForm 1.4s;
+  width: 80vw;
+  height: 100vh;
+  -webkit-animation: openForm 2.4s;
   -webkit-animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
   animation: openForm 1.4s;
   animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
 }
-.form.active#bg-img{
+#mc_embed_signup.active#bg-img{
   background: #444;
 
 
@@ -492,12 +491,12 @@ main {
 
 }
 
-.form.active * {
+#mc_embed_signup.active * {
   top: 0;
   opacity: 1;
 }
-.form.active::after,
-.form.active::before {
+#mc_embed_signup.active::after,
+#mc_embed_signup.active::before {
   opacity: 0;
 }
 
@@ -629,7 +628,7 @@ textarea {
 }
 
 /* Form closed styles */
-.form {
+#mc_embed_signup {
   width: 300px;
   height: 64px;
   background: #444;
@@ -637,9 +636,10 @@ textarea {
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.3);
   cursor: pointer;
   overflow: hidden;
+
 }
 
-.form * {
+#mc_embed_signup * {
   top: 0;
   opacity: 1;
 
@@ -649,8 +649,8 @@ textarea {
 
   display: flex;
 }
-.form::before,
-.form::after {
+#mc_embed_signup::before,
+#mc_embed_signup::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -663,7 +663,7 @@ textarea {
   -webkit-transform: scale(0.9999, 0.9999);
   transform: scale(0.9999, 0.9999);
 }
-.form::before {
+#mc_embed_signup::before {
   content:'';
   top: 15px;
 
@@ -676,7 +676,7 @@ textarea {
   border-bottom: 11px solid transparent;
   border-left: 16px solid transparent;
 }
-.form::after {
+#mc_embed_signup::after {
   content:'';
   top: 17px;
   border-top: 11px solid transparent;
@@ -684,7 +684,7 @@ textarea {
   border-bottom: 11px solid #fff;
   border-left: 16px solid #fff;
 }
-.form:hover::before {
+#mc_embed_signup:hover::before {
   -webkit-transform: perspective(1000) rotateX(180deg);
           transform: perspective(1000) rotateX(180deg);
   -webkit-transform-origin: 50% 0;
@@ -760,15 +760,18 @@ textarea {
 }
 
 @media screen and (max-width: 500px) {
-  .form.active {
-    width: 100%;
-    height: 100%;
+  #mc_embed_signup.active {
+    width: auto;
+    height: auto;
     margin:0;
     padding: 5px;
 
 
+  }#mc_embed_signup {
+    width: 100vw;
   }
-  .form
+  #mc_embed_signup
   #contact{
     width: 100vw;
+
   }
